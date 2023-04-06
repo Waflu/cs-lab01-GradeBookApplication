@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GradeBook.GradeBooks
 {
-    internal class StandardGradeBook
+    public class StandardGradeBook:BaseGradeBook
     {
+        public StandardGradeBook(string name) : base(name) { Type = GradeBookType.Standard; }
     }
 }
